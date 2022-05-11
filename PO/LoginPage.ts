@@ -8,6 +8,7 @@ export class LoginPage extends BasePage {
   readonly userName: Locator;
   readonly password: Locator;
   readonly loginBtn: Locator;
+  readonly loginLogo: Locator;
 
   //Create constructor and initialize locators
   constructor(page: Page) {
@@ -16,6 +17,7 @@ export class LoginPage extends BasePage {
     this.userName = page.locator('#user-name');
     this.password = page.locator('#password');
     this.loginBtn = page.locator('#login-button');
+    this.loginLogo = page.locator('.login_logo');
   }
 
   /**
