@@ -1,0 +1,14 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Test automation with Playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium"
+  },
+  "author": "Dimitris Groumpos",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.21.1"
+  }
+}
