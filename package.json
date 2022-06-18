@@ -4,11 +4,14 @@
   "description": "Test automation with Playwright",
   "main": "index.js",
   "scripts": {
-    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium"
+    "specs": "playwright test --config=e2e.config.ts --project=Chromium",
+    "specs-report": "playwright test --config=e2e.config.ts --project=Chromium --reporter=html",
+    "specs-report-allure": "playwright test --config=e2e.config.ts --project=Chromium --reporter=line,allure-playwright"
   },
   "author": "Dimitris Groumpos",
   "license": "ISC",
-  "dependencies": {
-    "@playwright/test": "^1.21.1"
+  "devDependencies": {
+    "@playwright/test": "^1.22.2",
+    "allure-playwright": "^2.0.0-beta.16"
   }
 }
